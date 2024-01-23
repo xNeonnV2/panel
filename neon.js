@@ -59,6 +59,12 @@ if (cluster.isMaster){
     console.log(` Segment ${i} Start`);
   }
   console.log("Attack Sent Successfully...")
+  console.log(`Starting attack on Target: ${args.target}`);
+  console.log(`Time: ${args.time} seconds`);
+  console.log(`Rate: ${args.Rate} requests per second`);
+  console.log(`Threads: ${args.threads}`);
+  console.log(`Proxy: ${args.proxyFile}`);
+  console.log(`Protocol: ${args.protocolProxies}`);
   
   setTimeout(() => {
     process.exit(1);
